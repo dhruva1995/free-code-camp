@@ -1,0 +1,65 @@
+.text-center {
+    text-align: center;
+}
+
+
+#main {
+    font-family: 'Verdana';
+    background-color: #F7D4EC;
+    border-radius: 5px;
+    padding: 25px 20px;
+    
+}
+
+body {
+    padding: 10px 5px;
+    min-width: 500px;
+    background-color: #C21460;
+    color: #2B3409;
+}
+
+#img-div {
+    background-color: #CBE432;
+    overflow: hidden;
+    padding: 15px;
+}
+#image {
+    height: auto;
+    display: block;
+    max-width: 100%;
+
+    margin: 0px auto 15px auto;
+}
+
+#img-caption {
+    text-align: center;
+}
+
+.info-heading {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 35px 0px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.narrow-wide-text {
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+#tribute-quote {
+    margin: 60px auto;
+}
+
+.quote-text {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+#tribute-link {
+    color: #405200;
+}
