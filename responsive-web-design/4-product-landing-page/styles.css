@@ -221,6 +221,7 @@ section {
 
 #video {
     width: 80%;
+    min-width: 300px;
     aspect-ratio: 16 / 9;
     margin: 10px auto;
     display: block;
