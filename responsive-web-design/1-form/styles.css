@@ -1,11 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     color: #fff;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
-    background-size: cover;
+}
+
+.background {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    
+    background-image:linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
 }
 
 header {
@@ -15,65 +34,84 @@ header {
 header p {
     margin-top: -12px;
     margin-bottom: 25px;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 1.125rem;
-
+    line-height: 1.4;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
+main {
+    padding: 3rem;
+}
 
+div.questions-with-options, div.two-liner {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.choice {
+    margin: 0.5rem 0;
+}
+
+form {
+    font-size: 1.2rem;
+}
+
+
+div.two-liner > .two-liner-input {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 0.5rem 0px;
+    padding: 0.2rem 1rem;
+    border: 2px solid transparent;
+}
+
+textarea.multi-line-input {
+    height: 8rem !important;
+}
+
+input.qwo-input {
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    top: 1px;
+}
+
+p.qwo-question {
+    margin: 0px;
+}
 
 
 .description {
     font-style: italic;
 }
 
-.container {
+#container {
     margin: auto;
+    position: relative;
+    z-index: 0;
 }
 
 form {
     background-color:#1b1b32;
     opacity: 0.9;
-    max-width: 600px;
+    min-width: 360px;
+    max-width: 800px;
     margin: auto;
     padding: 12px 40px;
     border-radius: 5px;
 }
 
-.input-choice label {
-    display: block;
-    margin-bottom: 5px;
-}
 
-.input-choice label:first-of-type {
-    display: block;
-    margin-top: -10px;
-}
 
-.input-choice input, textarea {
-    margin-right: 10px;
-}
-
-.input-group input, select, textarea {
-    box-sizing: border-box;
-    width: 100%;
-    height: 2.3em;
-    margin-top: 7px;
-    padding: 0.5em;
-    border-radius: 3px;
-    border: 0px;
-}
-
-div {
-    margin: 25px 0 25px 0
-}
-
-.submit-button {
+#submit {
     width: 100%;
     background-color: #37af65;
     color: #fff;
     height: 3.5em;
+    font-size: 1.2rem;
 }
 
 
