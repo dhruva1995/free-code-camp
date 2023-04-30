@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Dhruva's Portfolio Page</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <nav class="nav-bar">
             <ul class="links">
                 <li class="link-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="link-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="link-item"><a href="#projects-section" class="nav-link">Projects</a></li>
                 <li class="link-item"><a href="#contact-me" class="nav-link">Contact Me</a></li>
             </ul>
         </nav>
@@ -25,13 +26,47 @@
                     <p>Hey, I am Dhruva Chandra</p>
                     <p>    -- A web developer</p>
                 </div>
-                <div class="home-image"><img src="my-image.png" alt="My Photo" ></div>
+                <div class="home-image"><img src="assets/images/my-image.png" alt="My Photo" ></div>
             </div>
         </section>
-        <section id="projects">
-            
+        <section id="projects-section">
+            <p class="section-intro-text">Here are some of my projects</p>
+            <div class="projects">
+            <div class="project">
+                <a href="https://dhruva1995.github.io/free-code-camp/responsive-web-design/1-form" class="project-thumbnail">
+                    <img class="project-image" src="assets/images/1-surevey-form.png" alt="survey form that I built for 1st challenge of freecodecamp's responsive wb design">
+                    <div><p class="project-name">Survey Form</p></div>
+                </a>   
+            </div>
+            <div class="project">
+                <a href="https://dhruva1995.github.io/free-code-camp/responsive-web-design/2-tribute-page" class="project-thumbnail">
+                    <img class="project-image" src="assets/images/2-tribute-page.png" alt="tribute page that I built for 2nd challenge of freecodecamp's responsive wb design">
+                    <div><p class="project-name">Tribute Page</p></div>
+                </a>   
+            </div>
+
+            <div class="project">
+                <a href="https://dhruva1995.github.io/free-code-camp/responsive-web-design/3-technical-doc-page" class="project-thumbnail">
+                    <img class="project-image" src="assets/images/3-document-page.png" alt="documentation page that I built for 3rd challenge of freecodecamp's responsive wb design">
+                    <div><p class="project-name">Documentation Page</p></div>
+                </a>   
+            </div>
+            <div class="project">
+                <a href="https://dhruva1995.github.io/free-code-camp/responsive-web-design/4-product-landing-page" class="project-thumbnail">
+                    <img class="project-image" src="assets/images/4-product-landing-page.png" alt="product landing page that I built for 4th challenge of freecodecamp's responsive wb design">
+                    <div><p class="project-name">Product landing page</p></div>
+                </a>   
+            </div>
+            </div>
         </section>
-        <section id="contact-me"></section>
+        <section id="contact-me">
+            <p class="section-intro-text">Contact me via...</p>
+            <div class="social-icons">
+                <div class="social-icon-wrapper">
+                    <a href="tel:+919490967400"><i class="fa-solid fa-phone social-icon"></i></a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>
