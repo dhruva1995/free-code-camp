@@ -221,9 +221,11 @@ section#projects-section {
 
 .project .project-name {   
     text-align: center;
-    color: black;
+    color: white;
+    background-color: black;
+    padding: 0.5rem 0;
     font-size: 1.1rem;
-    margin: 0.5rem auto;
+    margin: 0px;
 
 }
 
@@ -233,11 +235,19 @@ section#projects-section {
 }
 
 section#contact-me {
+    background-color: black;
+    color: white;
     width: 100%;
+    padding-bottom: 3rem;
+}
+
+div.social-icons {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 i.social-icon {
-    font-size: 3rem;
-    color: black;
+    font-size: 2rem;
+    color: white;
 }
 
