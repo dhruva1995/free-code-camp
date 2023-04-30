@@ -19,14 +19,11 @@ body {
     margin: 0px;
 }
 
-.header {
+.header #navbar {
     position: fixed;
     top:0px;
     left: 0px;
-    display: flex;
-    justify-content: space-between;
     width: 100%;
-    align-items: flex-end;
     border-bottom: 2px solid black;
     z-index: 1;
     background-color: white;
@@ -41,50 +38,16 @@ ul.links {
     margin: 1rem 2rem;
 }
 
-@media screen and (max-width : 640px) {
-    ul.links {
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: center;
-        margin: inherit;
-    }
-    header.header {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    main {
-        top: calc(4.4rem + (3 * 1.2 * 1rem) + 1rem + 2px);
-    }
-
-    
-
-}
-@media screen and (min-width: 640px) {
-    main {
-        top: calc(4.4rem + 2px);
-    }
-    
-
-}
 
 main {
     position: absolute;
     width: 100%;
-    
+
 }
 
-main > section {
-    padding-top: 2rem;
-}
-
-.logo-text {
-    font-size: 2.4rem;
-    
-}
-
-.logo {
-    margin: 1rem 3rem;
+section {
+    padding-top: 3.3rem;
 }
 
 
@@ -113,27 +76,33 @@ a.nav-link:hover {
 
 
 
-main>section#home {
+main>section#welcome-section {
     width: 100%;
     background-color: gray;
+    height: 100vh;
 }
 
 div.home {
     display: grid !important;
-    grid-template-columns: 1fr 1fr;
-}
-
-home> div {
-    display: inline;
+    grid-template-columns: 5fr 7fr;
+    height: 100%;
+    align-items: center;
 }
 
 @media screen and (max-width : 640px) {
     .home {
+        height: unset;
         grid-template-columns: 1fr !important;
+        
     }
     
     .home-text {
         grid-row: 2 / 3 !important;
+        padding-left: 0px !important;
+    }
+
+    .home-text h1 {
+        font-size: 1.5rem;
     }
 
     .home-image {
@@ -147,8 +116,7 @@ home> div {
 
 .home-image > img{
     aspect-ratio: 1/1;
-    width: minmax(360px, 500px)u;
-    height: auto;
+    width: minmax(360px, 500px);
     min-width: 360px;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
@@ -162,6 +130,7 @@ home> div {
     font-size: 1.5rem;
     font-style: bold;
     color: white;
+    padding-left: 3rem;
 }
 
 .projects {
@@ -182,22 +151,22 @@ home> div {
         gap: 3rem;
     }
 
-    .project {
+    .project-tile {
         opacity: 0.8;
     }
 }
 
-section#projects-section {
+section#projects {
     background-color: white;
 }
 
-.project {
+.project-tile {
     border: 5px solid black;
     margin: 2px;
     
 }
 
-.project img.project-image {
+.project-tile img.project-image {
     width: min(calc(100vw - 14px - 2rem), 450px);
     height: min(calc(100vw - 14px - 2rem), 450px);
     object-fit: contain;
@@ -214,12 +183,12 @@ section#projects-section {
 
 
 
-.project:hover {
+.project-tile:hover {
     box-shadow: 5px 5px 5px #111;
     opacity: 1;
 }
 
-.project .project-name {   
+.project-tile .project-title {   
     text-align: center;
     color: white;
     background-color: black;
@@ -232,6 +201,7 @@ section#projects-section {
 .section-intro-text {
     text-align: center;
     font-size: 2rem;
+    margin-top: 0rem;
 }
 
 section#contact-me {
